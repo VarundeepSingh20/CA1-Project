@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Warmth Donation Drive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a class="logo" href="#home">Winter <span>Warmth</span></a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#calendar">Calendar</a>
+                <a href="#centres">Centres</a>
+                <a href="#donate">Donate</a>
+                <a href="#pickup">Pickup</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <p class="eyebrow">SHARE WARMTH • SPREAD KINDNESS</p>
+
+                <h1>A little warmth can make a big difference.</h1>
+
+                <p>
+                    Donate warm clothes and blankets to help people
+                    stay safe and comfortable this winter.
+                </p>
+
+                <a class="main-button" href="#donate">Donate Now</a>
+            </div>
+
+            <div class="hero-art">
+                <div class="winter-icon">🧣</div>
+                <h2>Give Warmth</h2>
+                <p>One donation. More warmth.</p>
+                <p class="clothes">🧥 🧤 🧦 🧶</p>
+                <p class="blanket">Warm blankets for everyone ♡</p>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="section container" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">HOW YOU CAN HELP</p>
+                <h2>Make winter warmer for someone</h2>
+                <p>
+                    Choose what works best for you.
+                    Every clean and usable donation matters.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">🧥</div>
+                    <h3>Donate Clothes</h3>
+                    <p>
+                        Give jackets, sweaters and other warm clothes
+                        that are in good condition.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🧣</div>
+                    <h3>Donate Blankets</h3>
+                    <p>
+                        Help someone stay warm during cold nights
+                        by donating blankets.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Request Pickup</h3>
+                    <p>
+                        Request doorstep pickup if you have
+                        10 or more warm garments to donate.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Collection calendar -->
+        <section class="section soft-section" id="calendar">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">PLAN YOUR DONATION</p>
+                    <h2>Collection calendar</h2>
+                    <p>Highlighted dates are collection days.</p>
+                </div>
+
+                <div class="calendar-card">
+                    <h3>November 2026</h3>
+
+                    <div class="calendar-grid weekdays">
+                        <span>Sun</span>
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                    </div>
+
+                    <div class="calendar-grid dates">
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span class="collection-day">5</span>
+                        <span>6</span>
+                        <span>7</span>
+
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span class="collection-day">12</span>
+                        <span>13</span>
+                        <span>14</span>
+
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span class="collection-day">19</span>
+                        <span>20</span>
+                        <span>21</span>
+
+                        <span>22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+                        <span class="collection-day">26</span>
+                        <span>27</span>
+                        <span>28</span>
+
+                        <span>29</span>
+                        <span>30</span>
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                    </div>
+
+                    <p class="calendar-note">
+                        <span class="date-key"></span>
+                        Collection day • 10 AM – 4 PM
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Collection centres -->
+        <section class="section container" id="centres">
+            <div class="section-heading">
+                <p class="eyebrow">FIND A DROP-OFF POINT</p>
+                <h2>Collection centres</h2>
+                <p>Enter your city to view a suggested collection location.</p>
+            </div>
+
+            <div class="finder-card">
+                <label for="city">Your city</label>
+
+                <div class="finder-row">
+                    <input type="text" id="city" placeholder="Enter city name">
+
+                    <button class="main-button" type="button"
+                        onclick="findCentre()">
+                        Find Centre
+                    </button>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!-- Donation form -->
+        <section class="section soft-section" id="donate">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">MAKE A PLEDGE</p>
+                    <h2>Donate winter essentials</h2>
+                    <p>Tell us what you would like to donate.</p>
+                </div>
+
+                <div class="form-card">
+                    <form onsubmit="pledge(); return false;">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="donorName">Name</label>
+                                <input type="text" id="donorName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="donorEmail">Email</label>
+                                <input type="email" id="donorEmail" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="jackets">Jackets</label>
+                                <input type="number" id="jackets" min="0" value="0">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sweaters">Sweaters</label>
+                                <input type="number" id="sweaters" min="0" value="0">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="blankets">Blankets</label>
+                                <input type="number" id="blankets" min="0" value="0">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="kidsWear">Kids' warm wear</label>
+                                <input type="number" id="kidsWear" min="0" value="0">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="donorCity">City</label>
+                            <input type="text" id="donorCity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="donorMessage">Message (optional)</label>
+                            <textarea id="donorMessage" rows="3"></textarea>
+                        </div>
+
+                        <button class="main-button" type="submit">
+                            Submit Pledge
+                        </button>
+
+                    </form>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Pickup form -->
+        <section class="section container" id="pickup">
+
+            <div class="section-heading">
+                <p class="eyebrow">DOORSTEP COLLECTION</p>
+                <h2>Request a pickup</h2>
+                <p>Pickup requests are for 10 or more warm garments.</p>
+            </div>
+
+            <div class="form-card">
+                <form onsubmit="pickup(); return false;">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="pickupName">Name</label>
+                            <input type="text" id="pickupName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pickupEmail">Email</label>
+                            <input type="email" id="pickupEmail" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="garmentCount">Number of garments</label>
+                            <input type="number" id="garmentCount" min="10" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pickupAddress">Pickup address</label>
+                        <textarea id="pickupAddress" rows="3" required></textarea>
+                    </div>
+
+                    <button class="main-button" type="submit">
+                        Request Pickup
+                    </button>
+
+                </form>
+
+               
+            </div>
+        </section>
+
+        <!-- Distribution route -->
+        <section class="section soft-section" id="routes">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">DISTRIBUTION PLAN</p>
+                    <h2>Night distribution route</h2>
+                    <p>
+                        A sample route showing places volunteers
+                        may distribute blankets.
+                    </p>
+                </div>
+
+                <div class="route-card">
+
+                    <div class="route-stop">
+                        <span>1</span>
+                        <div>
+                            <h3>Starting collection point</h3>
+                            <p>
+                                Volunteers collect packed donations
+                                before leaving.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="route-line"></div>
+
+                    <div class="route-stop">
+                        <span>2</span>
+                        <div>
+                            <h3>Areas near flyovers</h3>
+                            <p>Volunteers distribute blankets where needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="route-line"></div>
+
+                    <div class="route-stop">
+                        <span>3</span>
+                        <div>
+                            <h3>Areas near railway stations</h3>
+                            <p>
+                                Volunteers continue distribution while
+                                following local safety rules.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="small-note">
+                        Illustrative route only. Organisers should select
+                        actual locations after a local survey.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing section -->
+        <section class="closing-cta">
+            <div class="container">
+                <h2>Share what you can. Help someone stay warm.</h2>
+                <a class="light-button" href="#donate">
+                    Make a Donation Pledge
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Winter Warmth Donation Drive</p>
+            <p>Small acts of kindness create a warmer winter.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
