@@ -35,7 +35,7 @@ function pledge() {
         alert("Please enter at least one item to donate.");
     }
     else {
-        alert("Thank you, " + name + "! Your donation pledge has been recorded for this demo.");
+        alert("Thank you, " + name + "! Your donation pledge has been recorded ");
     }
 }
 
