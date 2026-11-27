@@ -1,0 +1,418 @@
+/* Basic page setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #263238;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header and navigation */
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-container {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #183b56;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #d97745;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #34495e;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d97745;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(110deg, #102c40, #2c718d);
+    color: #ffffff;
+    padding: 75px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: #d97745;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero .eyebrow {
+    color: #ffd0ad;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    color: #e5edf1;
+    margin-bottom: 25px;
+}
+
+.hero-art {
+    background: #f4f7f8;
+    color: #183b56;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+}
+
+.winter-icon {
+    font-size: 55px;
+}
+
+.hero-art h2 {
+    margin: 8px 0;
+}
+
+.clothes {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.blanket {
+    background: #dceaf2;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Buttons */
+.main-button, .light-button {
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 22px;
+    background: #d97745;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background: #bd6033;
+}
+
+.light-button {
+    background: #ffffff;
+    color: #183b56;
+}
+
+/* Sections and cards */
+.section {
+    padding: 65px 0;
+}
+
+.soft-section {
+    background: #f4f7f8;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.section-heading h2 {
+    color: #183b56;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.section-heading > p:last-child {
+    color: #687780;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.feature-card, .calendar-card, .finder-card,
+.form-card, .route-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 18px rgba(24, 59, 86, 0.08);
+}
+
+.feature-card {
+    border: 1px solid #edf0f2;
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    color: #183b56;
+    margin-bottom: 8px;
+}
+
+/* Calendar */
+.calendar-card {
+    max-width: 650px;
+    margin: auto;
+}
+
+.calendar-card h3 {
+    text-align: center;
+    color: #183b56;
+    margin-bottom: 15px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    text-align: center;
+}
+
+.calendar-grid span {
+    padding: 10px 2px;
+    border-radius: 5px;
+}
+
+.weekdays span {
+    background: #183b56;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dates span {
+    background: #f4f7f8;
+}
+
+.dates .empty {
+    background: #ffffff;
+}
+
+.dates .collection-day {
+    background: #d97745;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.calendar-note {
+    margin-top: 15px;
+    text-align: center;
+    color: #687780;
+}
+
+.date-key {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #d97745;
+    border-radius: 3px;
+}
+
+/* Centre finder and forms */
+.finder-card, .form-card {
+    max-width: 750px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5da;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: #2c718d;
+}
+
+.finder-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.finder-row input {
+    flex: 1;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.small-note {
+    color: #687780;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+/* Route section */
+.route-card {
+    max-width: 750px;
+    margin: auto;
+}
+
+.route-stop {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.route-stop span {
+    background: #d97745;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.route-stop h3 {
+    color: #183b56;
+}
+
+.route-line {
+    height: 25px;
+    border-left: 2px solid #d97745;
+    margin-left: 16px;
+}
+
+/* Closing section and footer */
+.closing-cta {
+    background: #183b56;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.closing-cta h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #102c40;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 5%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .finder-row {
+        flex-direction: column;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .calendar-grid span {
+        padding: 7px 1px;
+    }
+}
